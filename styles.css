@@ -120,4 +120,93 @@ body {
 /* Intro Section */
 .intro-section {
     text-align: center;
-    padding: 2rem
+    padding: 2rem 1rem;
+    background-color: #e9ecef;
+}
+
+.intro-section h2 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Horizontal Feature Section */
+.horizontal-feature-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #fff;
+}
+
+.horizontal-features {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.horizontal-feature {
+    text-align: center;
+    flex: 1 1 300px; /* Adjusts based on screen size */
+    max-width: 300px;
+}
+
+.horizontal-feature img {
+    width: 100%;
+    max-width: 150px; /* Limits image size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.horizontal-feature h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .horizontal-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horizontal-feature {
+        max-width: 80%; /* Allows the feature to take up more space on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-feature img {
+        max-width: 100px; /* Shrinks the image further on very small screens */
+    }
+
+    .hero h2 {
+        font-size: 2em; /* Adjust hero text size on small screens */
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9em;
+    }
+}
