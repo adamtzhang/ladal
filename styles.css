@@ -10,21 +10,23 @@
     --primary-color: #a41d30;
     --accent-color: #ffc107;
     --light-bg: #f8f9fa;
+    --dark-bg: #333;
 }
 
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--dark-bg);
     background-color: var(--light-bg);
     scroll-behavior: smooth;
+    line-height: 1.6;
 }
 
 /* Header */
 .header {
     background-color: var(--primary-color);
     color: #fff;
-    padding: 20px 0;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -36,12 +38,12 @@ body {
 
 .logo {
     width: 80px;
-    margin-right: 20px;
+    margin-right: 1rem;
 }
 
 .title-text h1 {
-    font-size: 1.8em;
-    margin-bottom: 5px;
+    font-size: 2em;
+    margin-bottom: 0.3rem;
 }
 
 /* Navbar */
@@ -49,12 +51,12 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--primary-color);
-    padding: 10px 0;
+    padding: 1rem 0;
 }
 
 .navbar a {
     color: #fff;
-    padding: 12px 20px;
+    padding: 0.8rem 1.2rem;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
@@ -72,7 +74,7 @@ body {
     background-position: center;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 6rem 1rem;
     position: relative;
 }
 
@@ -93,16 +95,16 @@ body {
 
 .hero h2 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .hero p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 .hero-button {
-    padding: 10px 20px;
+    padding: 0.8rem 1.6rem;
     background-color: var(--accent-color);
     color: #000;
     text-decoration: none;
@@ -118,33 +120,33 @@ body {
 /* Intro Section */
 .intro-section {
     text-align: center;
-    padding: 40px 20px;
+    padding: 2rem 1rem;
     background-color: #e9ecef;
 }
 
 .intro-section h2 {
     font-size: 2em;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 /* Feature Section */
 .feature-section {
-    padding: 50px 20px;
+    padding: 3rem 1rem;
     background-color: #fff;
     text-align: center;
 }
 
 .features {
-    display: ;
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .feature-box {
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 1.5rem;
     border-radius: 8px;
     width: 300px;
     text-align: center;
@@ -165,5 +167,5 @@ body {
     background-color: var(--primary-color);
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 1rem;
 }
